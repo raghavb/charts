@@ -12,3 +12,5 @@ url(r'^search$', 'assignment.views.search', name='search'),
 url(r'^upload$', 'assignment.views.upload', name='upload'),
 url(r'^.*', 'assignment.views.raise404', name='404'),
 )
+if settings.DEBUG:
+   urlpatterns += staticfiles_urlpatterns() 
