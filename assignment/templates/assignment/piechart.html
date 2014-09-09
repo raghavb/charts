@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+  
+  {% block tags %}
+    <script src="/static/js/nvd3/lib/d3.v3.js"></script>
+    <script src="/static/js/nvd3/nv.d3.js"></script>
+    <script src="/static/js/nvd3/src/tooltip.js"></script>
+    <script src="/static/js/nvd3/src/utils.js"></script>
+    <script src="/static/js/nvd3/src/interactiveLayer.js"></script>
+    <script src="/static/js/nvd3/src/models/legend.js"></script>
+    <script src="/static/js/nvd3/src/models/axis.js"></script>
+    <script src="/static/js/nvd3/src/models/scatter.js"></script>
+    <script src="/static/js/nvd3/src/models/line.js"></script>
+    <script src="/static/js/nvd3/src/models/lineChart.js"></script>
+    <script src="/static/js/createChart.js"></script>
+    <link href="/static/js/nvd3/src/nv.d3.css" rel="stylesheet" type="text/css">
+
+    <style>
+
+      body {
+        overflow-y:scroll;
+      }
+
+      text {
+        font: 12px sans-serif;
+      }
+
+      svg {
+        display: block;
+      }
+
+      #chart1 svg {
+        height: 500px;
+        min-width: 200px;
+        min-height: 100px;
+
+      }
+
+      #chart1 
+      {
+        margin-top: 100px;
+      }
+    </style>
+
+
+    <script>
+
+      window.x = {{ x }};
+      window.y = {{ y }};
+      window.company = "{{ key }}";
+
+    </script>
+  {% endblock %}
+
+  {% block container %}
+    <div id="chart1" >
+      <svg style="height: 750px;width: 1280px;"></svg>
+    </div>
+  {% endblock %}
+}

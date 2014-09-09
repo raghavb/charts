@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+<div style="margin-top:70px; margin-left:15px;font-size:170%;">
+  <ul>
+    <li> This application is a simple illustration of the use nvd3.js with Django. </li>
+    <li> Any stock's CSV file i.e. a file containg various prices at respective dates can be uploaded by a registered user to render as a line chart. </li>
+    <ul>
+      <li> The file has to be formatted according to Yahoo Finance's historical stock data format. </li>
+      <li> To download an example, <a href="http://real-chart.finance.yahoo.com/table.csv?s=GE&a=00&b=2&c=1962&d=08&e=9&f=2014&g=d&ignore=.csv"> click here. </a>  </li>
+    </ul>
+    <li>The search feature provides a powerful method of searching previously uploaded charts.</li>
+    <ul>
+      <li>Search can be done by searching for the company's name as entered when uploading it's data. </li>
+    </ul>
+    <li>Enjoy</li>
+  </ul>
+</div>
+
+{% endblock %}

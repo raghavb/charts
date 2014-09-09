@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+<!-- http://bootsnipp.com/snippets/featured/login-in-a-panel is where the following snippet is from -->
+
+<div class="container" style="margin-top:80px">
+  <!-- Form error handling -->
+  {% for error in form.non_field_errors %}
+    <p style="color: red">
+      {{ error }}
+    </p>
+  {% endfor %}
+
+  <!-- Registratin block -->
+  <div class="col-md-4">
+    <div class="login-panel panel panel-default">
+      <div class="panel-heading">
+          <h3 class="panel-title">Sign Up</h3>
+      </div>
+      <div class="panel-body">
+        <form role="form" action = "{% url 'register' %}" method="post">
+          <fieldset>
+            {% for field in form.visible_fields %}
+            <div class="form-group">
+              {{field}} 
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-sm btn-success">Sign Up</button>
+            <a href="{% url 'login' %}" style="font-weight:bold; margin-left:210px;">Login</a>
+          </fieldset>
+          {% csrf_token %}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
