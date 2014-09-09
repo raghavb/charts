@@ -111,7 +111,7 @@ MEDIA_ROOT = PROJECT_ROOT + 'media/'
 MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = PROJECT_ROOT + 'static/'
 STATIC_URL = '/static/'
 
 # URL to use if the authentication system requires a user to log in.
