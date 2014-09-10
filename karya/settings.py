@@ -108,6 +108,8 @@ DEFAULT_FILE_STORAGE = 'karya.s3utils.MediaRootS3BotoStorage'
 AWS_ACCESS_KEY_ID = 'AKIAJXCNJ2MPEP4LXYQA'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'karya'
+AWS_PRELOAD_METADATA = True # necessary to fix manage.py collectstatic command to only upload changed files instead of all files
+
 
 #STATIC_URL = 'https://s3.amazonaws.com/myproject/static/'
 ADMIN_MEDIA_PREFIX = 'https://s3.amazonaws.com/karya/'
