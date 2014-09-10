@@ -102,7 +102,16 @@ USE_TZ = True
 MEDIA_ROOT = PROJECT_ROOT + 'media/'
 
 # URL that handles the media served from MEDIA_ROOT. 
-MEDIA_URL = '/media/'
+#MEDIA_URL = '/media/'
+
+DEFAULT_FILE_STORAGE = 'karya.s3utils.MediaRootS3BotoStorage'
+AWS_ACCESS_KEY_ID = 'AKIAJXCNJ2MPEP4LXYQA'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'karya'
+
+#STATIC_URL = 'https://s3.amazonaws.com/myproject/static/'
+ADMIN_MEDIA_PREFIX = 'https://s3.amazonaws.com/karya/'
+MEDIA_URL = 'https://s3.amazonaws.com/karya/'
 
 # Static files (CSS, JavaScript, Images)
 STATIC_ROOT = PROJECT_ROOT + 'static/'
