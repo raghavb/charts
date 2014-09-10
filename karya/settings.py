@@ -109,6 +109,7 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 MEDIA_URL = "https://s3.amazonaws.com/karya/" 
 AWS_ACCESS_KEY_ID = "AKIAJXCNJ2MPEP4LXYQA"
 AWS_SECRET_ACCESS_KEY = "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"
+AWS_PRELOAD_METADATA = True 
 
 # Static files (CSS, JavaScript, Images)
 STATIC_ROOT = PROJECT_ROOT + 'static/'
