@@ -106,7 +106,7 @@ MEDIA_ROOT = PROJECT_ROOT + 'media/'
 
 AWS_STORAGE_BUCKET_NAME = "karya"
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-MEDIA_URL = "https://%s.s3.amazonaws.com/" % os.environ['AWS_STORAGE_BUCKET_NAME']
+MEDIA_URL = "https://s3.amazonaws.com/karya/" 
 AWS_ACCESS_KEY_ID = "AKIAJXCNJ2MPEP4LXYQA"
 AWS_SECRET_ACCESS_KEY = "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"
 
