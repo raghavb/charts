@@ -75,10 +75,10 @@ WSGI_APPLICATION = 'karya.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', 
-        'NAME': 'dc6k90pjp0qq9e', 
-        'USER': 'vwflvipqfawbaa',
-        'PASSWORD': 'DO2MhybN1FRhzYnUq1DiZ14079',
-        'HOST': 'ec2-107-22-234-129.compute-1.amazonaws.com',
+        'NAME': 'ddis0m82ofdiu3', 
+        'USER': 'gofofjebpdlnis',
+        'PASSWORD': 'imjL0EYgMaKjnTC3PTc6VEKCI2',
+        'HOST': 'ec2-54-204-35-114.compute-1.amazonaws.com',
     }
 }
 
